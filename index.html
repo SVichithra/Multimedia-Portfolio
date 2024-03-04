@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/774580bcdc.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Mylogo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href=index.html>Home</a></li>
+                <li><a href=about.html>About</a></li>
+                <li><a href=service.html>Services</a></li>
+                <li><a href=portfolio.html>Portfolio</a></li>
+                <li><a href=testimonials.html>Testimonials</a></li>
+                <li><a href=contact.html>Contact</a></li>
+                
+                
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars"onclick="openmenu()"></i>
+        </nav>
+    </div>
+        <div class="header-text">
+            
+            <P>Undergraduate Web Designer</P>
+            <h1>Hi, I'M <span>Sammani</span><br>From Sri Lanka</h1>  
+            <a href="Video.html" class="btn">Welcome Video</a>
+            </button>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is Sammani Vichithra. I'm 24 years old. I am a undergraduate IT student of Rajarata Univercity of Sri Lanka. I have good knowlege for computer programing.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills<p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute.</li>
+                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                            <li><span>2016-2017</span><br>Internship at ekart eCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>UI/UX Design Training at Rajarata University Of Sri Lanka.</li>
+                            <li><span>2019</span><br>Diploma in Web Development.</li>
+                            <li><span>2018</span><br>High school Education.</li>
+                        </ul>
+                    </div>
+                    <audio controls autoplay loop>
+                        <source src="Multimedia files/audio.mp3" type="audio/mp3">
+                        Your browser does not support the audio tag.
+                    </audio>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <P>Web design involves creating and designing the visual layout, appearance, and functionality of websites. It encompasses elements such as layout, color scheme, typography, images, navigation, responsive design, user experience (UX), accessibility, loading speed, and integration. The goal of web design is to create visually appealing, user-friendly, and accessible websites that effectively communicate a brand's message, engage visitors, and achieve desired goals</P>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <P>UI/UX design involves creating visually appealing and user-friendly interfaces for digital products or services. UI design focuses on the aesthetics and visual elements of the interface, while UX design focuses on the overall user experience and interaction flow. The goal is to provide a seamless and enjoyable experience for users, taking into account their needs, preferences, and business objectives. It requires a combination of creativity, user-centered design principles, and technical skills to design interfaces that are both visually appealing and intuitive to use.</P>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <P>App design is the process of creating visually appealing and user-friendly interfaces for mobile applications. It involves designing the layout, navigation, and overall user experience (UX) to provide a seamless and engaging interaction for app users. App designers carefully consider factors like usability, functionality, and aesthetics to create interfaces that are intuitive, visually appealing, and aligned with the app's purpose. They conduct user research, develop wireframes and prototypes, and continuously iterate based on user feedback to optimize the app's usability and overall user satisfaction.</P>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>A social media app is a digital platform that allows users to connect, share content, and interact with others online.</P>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>An online shopping app is a digital platform that enables users to browse, search, and purchase products or services directly from their mobile devices. </P>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.jpg">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>A music app is a digital platform that allows users to discover, stream, and enjoy music on their mobile devices.</P>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="Portfolio-Gallery.html" class="btn">See more</a>
+    </div>
+</div>
+<div class="testimonials">
+    <div class="inner">
+    <marquee><h1>Testimonials</h1></marquee>
+      <div class="border"></div>
+
+        <div class="row">
+          <div class="col">
+            <div class="testimonial">
+              <img src="images/image1.jpeg" alt="">
+              <div class="name">John devid</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                I was in desperate need of a professional-looking website for my small business, and this came to the rescue. Working with them was a breeze – they took the time to understand my brand and goals. The end result was a sleek, modern website that perfectly represents my business. The team was responsive to my feedback and made the entire process enjoyable. I highly recommend to fellow entrepreneurs looking for a standout online presence.
+
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="testimonial">
+              <img src="images/image2.jpeg" alt="">
+              <div class="name">Anna Marie</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                As someone venturing into the world of e-commerce, I needed a website that not only looked good but also functioned seamlessly. this designer exceeded my expectations! They crafted an attractive and user-friendly website that showcases my products beautifully. The attention to detail in product pages and the streamlined checkout process make shopping on my site a joy. I'm grateful for the personalized approach and dedication to creating an online store that stands out.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="testimonial">
+              <img src="images/image3.jpeg" alt="">
+              <div class="name">Emma Rose</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                Being a tech-savvy blogger, I had specific ideas about how I wanted my website to look and function. This not only understood my vision but elevated it to a whole new level. The design is not only visually appealing but also optimized for a seamless reading experience. The integration of social media and other features was executed flawlessly. They created a digital space that truly reflects my personality and resonates with my audience. 
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"> </i> SammaniVichithra@gmail.com</p>
+                <p><i class="fas fa-phone-square"> </i> 0712929821</p>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/sammani-vichithra-9a54592b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/SVichithra"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <a href="resume.pdf" download class="btn btn2" >Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Create by Sammani Vichithra <i class="fas fa-heart"></i> 2024</p>
+    </div>
+</div>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+    </script>
+<script>
+ scriptURL = 'https://script.google.com/macros/s/AKfycbyiU1JI1ya_VyLTCSzzFOvNzWKpPcdY2DtPwGLmLgxVuFvzBoUfRCJwlJdn7dPD-iHO/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            msg.innerHTML = "Message Sent successfully"
+            setTimeout(function () {
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+});
+</script>
+</body>
+</html>
+    

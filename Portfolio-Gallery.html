@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/774580bcdc.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="image-gallery/Screenshot 1.png" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+  <div class="image-gallery">
+    <img src="image-gallery/Screenshot 1.png" onclick="openFullImg(this.src)">
+    <img src="image-gallery/Screenshot 2.png" onclick="openFullImg(this.src)">
+    <img src="image-gallery/Screenshot 3.png" onclick="openFullImg(this.src)">
+    <img src="image-gallery/Screenshot 4.png" onclick="openFullImg(this.src)">
+    <img src="image-gallery/Screenshot 5.png" onclick="openFullImg(this.src)">
+    <img src="image-gallery/Screenshot 6.png" onclick="openFullImg(this.src)">
+    <img src="image-gallery/Screenshot 7.jpg" onclick="openFullImg(this.src)">
+    <img src="image-gallery/Logo desing 1.jpeg" onclick="openFullImg(this.src)">
+    <img src="image-gallery/Logo desing 2.jpeg" onclick="openFullImg(this.src)">
+</body>
+<script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+        
+    }
+
+</script>
+</html>

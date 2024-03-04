@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/774580bcdc.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="images/Mylogo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href=index.html>Home</a></li>
+                <li><a href=about.html>About</a></li>
+                <li><a href=service.html>Services</a></li>
+                <li><a href=portfolio.html>Portfolio</a></li>
+                <li><a href=testimonials.html>Testimonials</a></li>
+                <li><a href=contact.html>Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars"onclick="openmenu()"></i>
+        </nav>  
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"> </i> SammaniVichithra@gmail.com</p>
+                    <p><i class="fas fa-phone-square"> </i> 0712929821</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/sammani-vichithra-9a54592b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/SVichithra"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="resume.pdf" download class="btn btn2" >Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>Create by Sammani Vichithra <i class="fas fa-heart"></i> 2024</p>
+        </div>
+    </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+        </script>
+    <script>
+    scriptURL = 'https://script.google.com/macros/s/AKfycbyiU1JI1ya_VyLTCSzzFOvNzWKpPcdY2DtPwGLmLgxVuFvzBoUfRCJwlJdn7dPD-iHO/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message Sent successfully"
+                setTimeout(function () {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    });
+    </script>
+</body>
+</html>
+    
